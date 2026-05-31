@@ -1,0 +1,22 @@
+
+server:
+  port: 9090
+  
+spring:
+   application:
+   name: crud-application
+   
+   datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=Practice;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Greenwave@123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  
+
+   jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
